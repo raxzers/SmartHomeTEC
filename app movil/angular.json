@@ -31,7 +31,10 @@
                         "stylePreprocessorOptions": {
                             "includePaths": ["src", "./node_modules"]
                         },
-                        "scripts": []
+                        "scripts": [
+                            "node_modules/html2canvas/dist/html2canvas.min.js",
+                            "node_modules/jspdf/dist/jspdf.min.js"
+                        ]
                     },
                     "configurations": {
                         "production": {
