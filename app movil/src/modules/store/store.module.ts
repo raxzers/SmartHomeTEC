@@ -1,17 +1,36 @@
+/* tslint:disable: ordered-imports*/
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
-import { StoreRoutingModule } from './store-routing.module';
-import { ShopComponent } from './containers/shop/shop.component';
+/* Modules */
+import { AppCommonModule } from '@common/app-common.module';
+import { NavigationModule } from '@modules/navigation/navigation.module';
 
+/* Components */
+import * as storeComponents from './components';
 
+/* Containers */
+import * as storeContainers from './containers';
+
+/* Guards */
+import * as storeGuards from './guards';
+
+/* Services */
+import * as storeServices from './services';
+import {ShopComponent} from './containers/shop/shop.component'
 @NgModule({
-  declarations: [
-    ShopComponent
-  ],
-  imports: [
-    CommonModule,
-    StoreRoutingModule
-  ]
+    imports: [
+        CommonModule,
+        RouterModule,
+        ReactiveFormsModule,
+        FormsModule,
+        AppCommonModule,
+        NavigationModule,
+    ],
+    providers: [...storeServices.services, ...storeGuards.guards],
+    declarations: [...storeContainers.containers, ...storeComponents.components,ShopComponent],
+    exports: [...storeContainers.containers, ...storeComponents.components],
 })
-export class StoreModule { }
+export class StoreModule {}

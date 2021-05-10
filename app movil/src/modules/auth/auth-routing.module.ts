@@ -17,7 +17,7 @@ export const ROUTES: Routes = [
     {
         path: '',
         pathMatch: 'full',
-        redirectTo: 'login',
+        redirectTo: '/shop',
     },
     {
         path: 'login',

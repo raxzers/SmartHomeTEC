@@ -1,4 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router'; 
+import {NgForm} from '@angular/forms';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
     selector: 'sb-register',
@@ -7,11 +10,9 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
     styleUrls: ['register.component.scss'],
 })
 export class RegisterComponent implements OnInit {
-/* Regiones:Array<any>=[
-        {name:'America Central', states:['Belice  ','Costa Rica  ','El Salvador  ','Guatemala  ','Honduras  ','Nicaragua  ','Panamá']}
-    ];*/
+    t2: Object = [];
     
-    constructor() {}
+    constructor(private route:Router,private http:HttpClient) {}
     ngOnInit() {}
     selectedCountry: String = "--Choose Country--";
   
@@ -45,14 +46,42 @@ export class RegisterComponent implements OnInit {
   
     
 	paises: Array<any> = []; //Angular 11
+    
 
-	
-	
+	get( url: string){
+        this.t2=new Object;
+        this.http.get(url).subscribe((data)=>{
+          
+        
+        console.log(data);
+         
+        this.t2= data;
+      })
+          
+      }
+      
 	
 	changeCountry(Regiones: any) { 
 		this.paises = this.Regiones.find((rgion: any) => rgion.name == Regiones.target.value).paises; //Angular 11
 	}
-    
-	
-	
+   
+	addMasDescr(){
+        var direcion= document.createElement("textarea");
+        direcion.classList.add("form-control");
+        direcion.classList.add("py-4");
+        direcion.setAttribute('name','direccion');
+        direcion.setAttribute('ngModel','');
+        
+        document.getElementById("descripcion")?.appendChild(direcion);
+    }
+    go(f: NgForm){
+        console.log(f.value);
+        var  ts=false;
+        if (ts){this.route.navigate(['/dashboard']);}
+             else
+         {
+           alert("usuario y/o contraseña equivocado, Por favor intentar de nuevo")
+           
+        }
+        }
 }

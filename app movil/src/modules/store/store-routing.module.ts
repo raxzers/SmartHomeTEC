@@ -1,10 +1,40 @@
+/* tslint:disable: ordered-imports*/
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+/* Module */
+import { StoreModule } from './store.module';
+
+/* Containers */
+import * as storeContainers from './containers';
+
+/* Guards */
+import * as storeGuards from './guards';
+
+/* Routes */
+export const ROUTES: Routes = [
+    
+     {
+         path: '',
+         canActivate: [],
+         component: storeContainers.ShopComponent,
+     },
+     {
+        path: 'fct',
+        canActivate: [],
+        component: storeContainers.FacturaComponent,
+    },
+    {
+        path: 'shop',
+        canActivate: [],
+        component: storeContainers.ShopComponent,
+    },
+
+
+];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+    imports: [StoreModule, RouterModule.forChild(ROUTES)],
+    exports: [RouterModule],
 })
-export class StoreRoutingModule { }
+export class StoreRoutingModule {}

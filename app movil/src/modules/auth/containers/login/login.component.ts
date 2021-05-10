@@ -16,7 +16,11 @@ export class LoginComponent implements OnInit {
     console.log(f.value);
     var  ts=false;
     if (ts){this.route.navigate(['/dashboard']);}
-		 else{alert("usuario y/o contraseña equivocado, Por favor intentar de nuevo")}
+		 else
+     {
+       alert("usuario y/o contraseña equivocado, Por favor intentar de nuevo")
+       
+    }
 	}
 
 }
