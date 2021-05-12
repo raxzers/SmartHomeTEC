@@ -14,20 +14,26 @@ import * as storeGuards from './guards';
 /* Routes */
 export const ROUTES: Routes = [
     
-     {
-         path: '',
-         canActivate: [],
-         component: storeContainers.ShopComponent,
-     },
+    {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: '/store/shop',
+    },
      {
         path: 'fct',
         canActivate: [],
         component: storeContainers.FacturaComponent,
+        data: {
+            title: 'Factura',
+        }
     },
     {
         path: 'shop',
         canActivate: [],
         component: storeContainers.ShopComponent,
+        data: {
+            title: 'Tienda de Smart Home TEC',
+        }
     },
 
 

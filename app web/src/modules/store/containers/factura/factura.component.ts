@@ -1,6 +1,8 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
     selector: 'sb-factura',
@@ -9,8 +11,12 @@ import html2canvas from 'html2canvas';
     styleUrls: ['factura.component.scss'],
 })
 export class FacturaComponent implements OnInit {
-    constructor() {}
-    ngOnInit() {}
+    constructor(private http: HttpClient) {}
+    postId: any;
+    ngOnInit() {
+      this.http.post<any>('https://reqres.in/api/posts', { title: 'Angular POST Request Example' }).subscribe(data => {
+      this.postId = data.id;
+  })}
     VIDEOGAMES = [
         {
           id: 1,

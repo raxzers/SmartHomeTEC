@@ -25,7 +25,7 @@ export class RegisterComponent implements OnInit {
         {name:'América Central-Caribe', paises:['Anguila  ','Antigua y Barbuda  ','Aruba  ','Bahamas  ','Barbados  ','Caribe Neerlandés  ','Bonaire  ','Saba  ','San Eustaquio  ','Cuba  ','Curazao  ','Dominica  ','Granada  ','Guadalupe ','Haití  ','Islas Caimán  ','Islas Turcas y Caicos  ','Islas Vírgenes Británicas  ','Islas Vírgenes de los Estados Unidos  ','Jamaica  ','Martinica|local  ','Montserrat  ','Puerto Rico  ','República Dominicana  ','San Bartolomé|local  ','San Cristóbal y Nieves  ','San Martín  ','San Vicente y las Granadinas  ','Santa Lucía  ','Sint Maarten  ','Trinidad y Tobago']},
 
         {name:'América del Norte', paises:
-        ['Bermudas  ','Canadá  ','Estados Unidos  ','Groenlandia  ','México  ','San Pedro y Miquelón']},
+        ['Bermudas','Canadá','Estados Unidos','Groenlandia','México','San Pedro y Miquelón']},
 
         {name:'América del Sur', paises:
         ['Argentina  ','Bolivia  ','Brasil  ','Chile  ','Colombia  ','Ecuador  ','Guayana Francesa  ','Guyana  ','Paraguay  ','Perú  ','Surinam  ','Uruguay  ','Venezuela']},
