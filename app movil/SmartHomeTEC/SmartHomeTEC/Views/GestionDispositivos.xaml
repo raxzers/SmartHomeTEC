@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartHomeTEC.Views.GestionDispositivos">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Grid Margin="20,0,20,0" VerticalOptions="CenterAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <StackLayout Grid.Row="0">
+                        <Entry Placeholder="Descripcion" FontSize="16" x:Name="EntryDescripcion"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="1">
+                        <Entry Placeholder="Tipo de dispositivo"  FontSize="16" x:Name="EntryTipoDispositivo"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="2">
+                        <Entry Placeholder="Marca" FontSize="16" x:Name="EntryMarca"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="3">
+                        <Entry Placeholder="Numero de serie"  FontSize="16" x:Name="EntrySerie"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="4">
+                        <Entry Placeholder="Consumo de dispositivo"  FontSize="16" x:Name="EntryConsumo"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="5">
+                        <Entry Placeholder="Aposento" FontSize="16" x:Name="EntryAposento"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="6">
+                        <Entry Placeholder="Fecha limite de garantia" FontSize="16" x:Name="EntryGarantia"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="7">
+                        <Button Text="Agregar dispositivo" HorizontalOptions="CenterAndExpand" TextColor="White" BackgroundColor="Blue" Clicked="Button_Clicked"/>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
