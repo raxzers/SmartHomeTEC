@@ -77,6 +77,17 @@ export const sideNavItems: SideNavItems = {
                     },
                 ],
             },
+            {
+                text: 'Store',
+                submenu: [
+                    {
+                        text: 'shop',
+                        link: '/store/shop',
+                    },
+                    
+                    
+                ],
+            },
         ],
     },
     charts: {

@@ -24,7 +24,7 @@ export const ROUTES: Routes = [
         canActivate: [],
         component: authContainers.LoginComponent,
         data: {
-            title: 'Pages Login - SB Admin Angular',
+            title: 'Pages Login',
         } as SBRouteData,
     },
     {
@@ -32,7 +32,7 @@ export const ROUTES: Routes = [
         canActivate: [],
         component: authContainers.RegisterComponent,
         data: {
-            title: 'Pages Register - SB Admin Angular',
+            title: 'Pages Register ',
         } as SBRouteData,
     },
     {
@@ -40,7 +40,7 @@ export const ROUTES: Routes = [
         canActivate: [],
         component: authContainers.ForgotPasswordComponent,
         data: {
-            title: 'Pages Forgot Password - SB Admin Angular',
+            title: 'Pages Forgot Password ',
         } as SBRouteData,
     },
     {
@@ -48,7 +48,7 @@ export const ROUTES: Routes = [
         canActivate: [],
         component: authContainers.ClientLoginComponent,
         data: {
-            title: 'Pages Forgot Password - SB Admin Angular',
+            title: 'login cliente',
         } as SBRouteData,
     },
 ];
