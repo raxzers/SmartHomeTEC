@@ -5,8 +5,8 @@ using System.Text;
 
 namespace SmartHomeTEC.Models
 {
-    [Table ("Dispositivos")]
-    class Dispositivo
+    [Table ("Dispositivo")]
+    public class Dispositivo
     {
         [PrimaryKey]
         public string Serie { get; set; }
