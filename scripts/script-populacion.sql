@@ -21,12 +21,12 @@ INSERT INTO L_DISP_TOTAL(Ademail,Disp_total)Values('master-ad@smarthometec.com',
 INSERT INTO L_DISP_REGION(Ademail,Disp_region)Values('master-ad@smarthometec.com','[An:5,Ac:5,AS:5,E:3,A:2,O:5]');
 
 /*ClIENTES*/
-INSERT INTO ClIENTE(Email ,Nombre ,Passw, Pais ,Continente,) VALUES('ElidaBermudezFonseca@gustr.com','Elida ','ieT8oi8eeB','Estados Unidos','América del norte');
+INSERT INTO ClIENTE(Email ,Nombre ,Passw, Pais ,Continente) VALUES('ElidaBermudezFonseca@gustr.com','Elida ','ieT8oi8eeB','Estados Unidos','América del norte');
 INSERT INTO APELLIDO (Clemail,Apellido)VALUES('ElidaBermudezFonseca@gustr.com','Bermúdez');
 INSERT INTO APELLIDO (Clemail,Apellido)VALUES('ElidaBermudezFonseca@gustr.com','Fonseca');
 INSERT INTO DIRECCION(Clemail ,Direccion ) VALUES('ElidaBermudezFonseca@gustr.com','1865 Doe Meadow Drive Chevy Chase, MD 20815');
 ;
-INSERT INTO ClIENTE(Email ,Nombre ,Passw, Pais ,Continente,apellidos ) VALUES('GordanPejic@superrito.com','Gordan','oideX4shoo','Sudafrica','África');
+INSERT INTO ClIENTE(Email ,Nombre ,Passw, Pais ,Continente) VALUES('GordanPejic@superrito.com','Gordan','oideX4shoo','Sudafrica','África');
 INSERT INTO APELLIDO (Clemail,Apellido)VALUES('GordanPejic@superrito.com','Pejić');
 INSERT INTO DIRECCION(Clemail ,Direccion ) VALUES('GordanPejic@superrito.com','717 Telford Ave Mothibistad 8482');
 
@@ -101,5 +101,3 @@ INSERT INTO TIPODISPOSITIVO(Tipo,Dispserie)VALUES('regleta','7441109018171');
 INSERT INTO TIPODISPOSITIVO(Tipo,Dispserie)VALUES('smart speaker','4611384515481');
 INSERT INTO TIPODISPOSITIVO(Tipo,Dispserie)VALUES('Smart Bulb','476971');
 INSERT INTO TIPODISPOSITIVO(Tipo,Dispserie)VALUES('Smart Bulb','1141');
-
-
