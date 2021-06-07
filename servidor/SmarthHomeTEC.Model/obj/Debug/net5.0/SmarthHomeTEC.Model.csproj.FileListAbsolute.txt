@@ -1,0 +1,12 @@
+C:\Users\Extremetech\source\repos\SmarthHomeTEC.Model\bin\Debug\net5.0\SmarthHomeTEC.Model.deps.json
+C:\Users\Extremetech\source\repos\SmarthHomeTEC.Model\bin\Debug\net5.0\SmarthHomeTEC.Model.dll
+C:\Users\Extremetech\source\repos\SmarthHomeTEC.Model\bin\Debug\net5.0\ref\SmarthHomeTEC.Model.dll
+C:\Users\Extremetech\source\repos\SmarthHomeTEC.Model\bin\Debug\net5.0\SmarthHomeTEC.Model.pdb
+C:\Users\Extremetech\source\repos\SmarthHomeTEC.Model\obj\Debug\net5.0\SmarthHomeTEC.Model.csprojAssemblyReference.cache
+C:\Users\Extremetech\source\repos\SmarthHomeTEC.Model\obj\Debug\net5.0\SmarthHomeTEC.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Extremetech\source\repos\SmarthHomeTEC.Model\obj\Debug\net5.0\SmarthHomeTEC.Model.AssemblyInfoInputs.cache
+C:\Users\Extremetech\source\repos\SmarthHomeTEC.Model\obj\Debug\net5.0\SmarthHomeTEC.Model.AssemblyInfo.cs
+C:\Users\Extremetech\source\repos\SmarthHomeTEC.Model\obj\Debug\net5.0\SmarthHomeTEC.Model.csproj.CoreCompileInputs.cache
+C:\Users\Extremetech\source\repos\SmarthHomeTEC.Model\obj\Debug\net5.0\SmarthHomeTEC.Model.dll
+C:\Users\Extremetech\source\repos\SmarthHomeTEC.Model\obj\Debug\net5.0\ref\SmarthHomeTEC.Model.dll
+C:\Users\Extremetech\source\repos\SmarthHomeTEC.Model\obj\Debug\net5.0\SmarthHomeTEC.Model.pdb
